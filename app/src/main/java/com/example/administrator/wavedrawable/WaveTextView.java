@@ -32,6 +32,7 @@ public class WaveTextView extends android.support.v7.widget.AppCompatTextView {
     @Override
     public boolean dispatchTouchEvent(MotionEvent event) {
         if (event.getAction() == MotionEvent.ACTION_UP) {
+            //为了测试方便看效果加的
             if (mIsSwitch) {
                 mWaveDrawable.setColors(mEndColor, mStartColor);
             } else {
